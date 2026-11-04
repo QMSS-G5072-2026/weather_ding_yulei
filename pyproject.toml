@@ -1,6 +1,6 @@
 [project]
 name = "weather_yd2926"
-version = "0.1.0"
+version = "0.1.1"
 description = "Weather station utilities for QMSS G5072"
 readme = "README.md"
 authors = [{ name = "Yulei Ding", email = "dinglea3333@gmail.com" }]
