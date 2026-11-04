@@ -1,5 +1,7 @@
 # weather_yd2926
 
+[![ci](https://github.com/QMSS-G5072-2026/weather_ding_yulei/actions/workflows/ci.yml/badge.svg)](https://github.com/QMSS-G5072-2026/weather_ding_yulei/actions/workflows/ci.yml)
+
 Weather station utilities for QMSS G5072
 
 ## Installation
@@ -21,7 +23,16 @@ $ uv build                      # build the sdist and wheel into dist/
 
 ## Usage
 
-- TODO
+```python
+import pandas as pd
+import weather_yd2926
+
+weather_yd2926.celsius_to_fahrenheit(100)  # 212.0
+weather_yd2926.summarize_temperatures([10.0, float("nan"), 20.0])
+
+raw = pd.DataFrame({"station": ["JFK"], "date": ["2026-07-01"], "temp_c": [30.0]})
+weather_yd2926.clean_readings(raw)
+```
 
 ## Contributing
 
